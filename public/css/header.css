@@ -1,0 +1,137 @@
+ /* Custom styles for the active link */
+ .nav-link.active {
+    color: #ff6826 !important;
+  }
+
+  button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+
+  .hero-section {
+    padding: 100px 0 15px 15px;
+    text-align: center;
+  }
+
+  /* Adjust the size of the Font Awesome icons */
+  /* .fa-search,
+  .fa-shopping-cart {
+    font-size: 24px;
+  } */
+
+  .hero-section {
+    padding: 100px 0 15px 15px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+    font-family: Inter !important;
+  }
+
+  .hero-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    font-family: Inter;
+  }
+
+  .cta-button {
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff2626;
+    border-radius: 50px;
+    font-family: Poppins !important;
+    display: inline-flex;
+    height: 60px;
+    padding: 0px 45px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    text-decoration: none !important;
+  }
+
+  .cta-button:hover {
+    /* text-decoration: none !important; */
+    color: #ffffff;
+  }
+
+  .video-button {
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration: none !important;
+  }
+
+  .video-button:hover {
+    text-decoration: none !important;
+  }
+
+  .video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .video-icon {
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .video-icon i {
+    font-size: 24px;
+  }
+
+  .watch-video {
+    color: #000;
+    font-family: Inter;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  @media screen and (max-width:991px) {
+    .cta-button  {
+      margin-left: 22px
+    }
+  }
+  @media screen and (max-width: 390px) {
+
+    .watch-video,
+    .video-icon {
+      margin-top: 10px;
+    }
+  }
+
+  .hero-image {
+    max-width: 65% !important;
+    height: auto;
+  }
+
+  @media screen and (max-width: 767px) {
+    .hero-image {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .video-container {
+      margin-top: 13px;
+    }
+  }
+
+  /* New container for background image */
+  .background-container {
+    background: url("http://localhost:8000/assets/images/Hero bg.svg") center no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 700px;
+  }

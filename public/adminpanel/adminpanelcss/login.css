@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: none !important; */
+}
+
+body {
+    font-family: Inter;
+    background-color: #FFF;
+    /* overflow-x: hidden; */
+}
+
+.login-heading {
+    margin-top: 80px;
+}
+
+.email,  .name, .rollno , .class , .number ,
+.password {
+    width: 424px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    border: 1px solid var(--lightblue, #C6D0EB);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+}
+
+.right-side-background {
+    background-color: #715DE2;
+    height: 850px;
+   
+}
+
+.right-side-heading {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* margin-top: 100px; */
+}
+
+a {
+    color: var(--Primary, #E86532);
+    text-align: right !important;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.login-btn {
+    width: 424px;
+    height: 60px;
+    border-radius: 30px;
+    background: var(--Primary, #E86532);
+    /* Button Shadow Purple Lvl 1 */
+    box-shadow: 0px 10px 20px 0px rgba(123, 66, 246, 0.15);
+    color: #FFF;
+    display: block;
+}
+
+.right-side-heading2 {
+    color: #FFF;
+
+    /* Body Large Text Semibold (24) */
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    padding-left: 80px;
+}
+
+.right-side-heading3 {
+    color: #FFF;
+    padding-left: 80px;
+    /* Heading 2 (60) */
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.login-form-container {
+    padding: 20px;
+}
+
+.right-side-heading {
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+@media (max-width: 991px) {
+    .login-form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .alert-danger{
+        width: 324px !important;
+    }
+#inputEmail , #inputPassword , .login-btn ,   .name , .rollno , .class , .number{
+    width: 324px;
+     height: 45px;
+}
+.right-side-heading{
+    font-size: 16px;
+}
+img{
+    width: 70%;
+}
+.right-side-heading2{
+    font-size: 14px;
+    padding-left: 40px;
+}
+.right-side-heading3{
+    font-size: 30px;
+    padding-left: 40px;
+}
+.right-side-background {
+/* background-color: #715DE2; */
+height: 500px;
+}
+
+}
+@media screen and (max-width: 380px) {
+    .alert-danger{
+        width: 224px !important;
+    }
+.right-side-background {
+/* width: 300px; */
+height: 400px;
+}
+.right-side-heading3{
+    font-size: 20px;
+    padding-left: 20px;
+}
+#inputEmail , #inputPassword , .login-btn ,  .name , .rollno , .class , .number{
+    width: 224px;
+     height: 40px;
+}
+.right-side-heading2{
+    padding-left: 20px;
+}
+}
+
+@media screen and (max-width: 298px) {
+    .Forget-password{
+     font-size: 14px;
+    }
+    .signup-head{
+        font-size: 14px ;
+    }
+    .right-side-background {
+        width: 300px;
+       
+    }
+}
+.login-btn , .form-group , .signup-heading , .Forget-password , .login-heading{
+    margin-left: 20px;
+}

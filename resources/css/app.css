@@ -1,0 +1,1054 @@
+:root {
+    --primary: #FF6826;
+    --light: #8E8C96;
+    --dark: #000000;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Inter;
+    background-color: #FFF;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    color: var(--dark);
+    font-family: Poppins !important;
+  }
+  
+  .nav-link:hover {
+    color: var(--primary) !important;
+  
+  }
+  
+  .fas.fa-play {
+    color: #FF6E6E;
+  }
+  
+  /* nav size for 767 screen start */
+  .toggle-button {
+    cursor: pointer;
+    padding: 10px;
+    color: #333;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    z-index: 1000;
+  }
+  
+  .close-button {
+    cursor: pointer;
+    padding: 10px;
+    color: #333;
+    background: none;
+    border: none;
+  }
+  
+  /* Media query for small screens */
+  @media screen and (max-width: 767px) {
+  
+    /* Show the sidebar for small screens */
+    .sidebar {
+      left: 0;
+    }
+  
+    .toggle-button {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 767px) {
+  
+    /* Hide the entire header for screens smaller than 767 pixels */
+    .col-md-7 .nav-link,
+    .col-md-3 .icon,
+    .col-md-3 button {
+      display: none;
+    }
+  }
+  
+  /* Show the logo and toggle button aside */
+  .logo-and-toggle {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-and-toggle .logo {
+    max-width: 50%;
+  }
+  
+  .logo-and-toggle .toggle-button {
+    align-self: center;
+  }
+  
+  /* End */
+  /* 2nd section start */
+  
+  .popular-food-card {
+    width: 250px;
+    height: 111px;
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    background: #FFF;
+    flex-shrink: 0;
+  }
+  
+  .popular-food-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.15);
+  
+  }
+  
+  /* Optional: Customize the card body and title styles */
+  .popular-food-card-body {
+    padding: 1.25rem;
+  }
+  
+  .category-heading {
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+  }
+  
+  .popular-food-card-title {
+    position: absolute;
+    left: 90px;
+    top: 31px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  
+  .popular-food-card-text {
+    position: absolute;
+    left: 91px;
+    bottom: 28px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .food-menu-images {
+    position: absolute;
+    left: 24px;
+    bottom: 30px;
+    border-radius: 50px;
+  }
+  
+  /* 2nd section end */
+  
+  /* 3rd section css start */
+  .work-background {
+    background: url('./assets/images/How\ its\ works\ bg.png') center no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 600px;
+  }
+  
+  .card-work {
+    width: 269px;
+    height: 299px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+  }
+  
+  .card-title-work {
+    position: absolute;
+    left: 55px;
+    bottom: 57px;
+    color: var(--dark);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 24px */
+  }
+  
+  svg {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 107px;
+    top: 70px;
+  }
+  
+  .How-It-Works {
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+  
+  }
+  
+  /* @media screen and (max-width: 350px){
+    .work-background {
+      width: 500px;
+    }
+  } */
+  
+  @media screen and (max-width:991px) {
+    .work-background {
+      height: 800px;
+    }
+  }
+  
+  @media screen and (max-width: 575px) {
+    .work-background {
+      height: 1000px;
+    }
+  
+    .section-3-row {
+      display: flex;
+      flex-wrap: wrap;
+  
+    }
+  
+    .card-work {
+      width: 150px;
+      height: 200px;
+  
+  
+    }
+  
+    svg {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: 65px;
+      top: 50px;
+    }
+  
+    .card-title-work {
+      position: absolute;
+      left: 39px;
+      bottom: 57px;
+      color: var(--dark);
+      font-family: Poppins;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%;
+  
+    }
+  
+    .How-It-Works {
+      font-size: 30px !important;
+    }
+  }
+  
+  /* 3rd section css end */
+  
+  /* Testominal css start */
+  .testimonials-heading {
+    text-align: center;
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .testimonials-paragraph {
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    color: var(--primary-secondary-text-text-200, #8E8C96);
+  }
+  
+  q::before,
+  q::after {
+    width: 54px;
+    height: 86px;
+    flex-shrink: 0;
+    color: var(--primary);
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  
+  .customer-review {
+    width: 768px;
+    color: var(--dark);
+    text-align: justify;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  
+  .customer-review-heading {
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+  }
+  
+  .customer {
+    color: var(--primary-secondary-text-text-300, #5B5866);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+  }
+  
+  .review-btn {
+    display: flex;
+    width: 180px;
+    height: 50px;
+    padding: 0px 45px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 50px;
+    background: #FF2626;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .star {
+    width: 24px;
+    height: 24px;
+    color: var(--primary);
+    font-size: 30px;
+  }
+  
+  .moving-button {
+    flex-shrink: 0;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .active-button {
+    color: #FF2626;
+  }
+  
+  @media screen and (max-width: 551px) {
+    .testimonials-heading {
+      font-size: 35px;
+    }
+  
+    .testimonials-paragraph {
+      font-size: 18px;
+  
+    }
+  
+    .customer-review {
+      font-size: 18px;
+    }
+  
+    /* .customer-image img{
+      width: 50%;
+    } */
+  }
+  
+  /* About Section css start */
+  
+  .about-heading {
+    /* text-align: center; */
+    /* Heading 2 (60) */
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .about-paragraph {
+    /* width: 537px; */
+    color: var(--primary-secondary-text-text-200, #8E8C96);
+    text-align: justify;
+    /* Body Medium Text (20) */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 24px */
+  }
+  
+  .about-heading2 {
+    text-align: justify;
+    /* Heading 4 (24) */
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 28.8px */
+  }
+  
+  .two-column-list {
+    columns: 2;
+    column-gap: 20px; /* Adjust the gap between columns as needed */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .two-column-list li {
+    color: #000;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    position: relative;
+    padding-left: 20px; /* Adjust the space between the bullet and the text */
+  }
+  
+  .two-column-list li::before {
+    content: '\2022'; /* Unicode character for a bullet point */
+    color: #FF2626; /* Change this to the color you want for the bullet */
+    position: absolute;
+    left: 0;
+  }
+  
+  
+  @media screen and (max-width: 551px) {
+    .about-heading {
+      font-size: 35px;
+    }
+  
+    .about-paragraph {
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 350px) {
+    .about-heading {
+      font-size: 25px;
+    }
+  
+    .about-paragraph {
+      font-size: 14px;
+    }
+    li{
+      font-size: 13px !important;
+      /* display: ; */
+    }
+  }
+  @media screen and (max-width: 380px) {
+    
+    hr{
+      display: none;
+    }
+  }
+  
+  
+  /* Team section css */
+  
+  .team-heading {
+    text-align: center;
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .team-cards {
+    width: 269px;
+    height: 383px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+  }
+  
+  .team-card-heading {
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+  }
+  
+  .team-card-paragraph {
+    margin-top: 10px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  @media screen and (max-width: 767.98px) {
+    .card {
+      margin: 0 auto;
+      /* Added */
+      float: none;
+      /* Added */
+      margin-bottom: 10px;
+      /* Added */
+    }
+  
+    .team-heading {
+      font-size: 35px;
+    }
+  
+    .team-cards {
+      width: 200px;
+      height: 300px;
+    }
+  }
+  
+  /* <!-- Order section css start --> */
+  .ordersection-container {
+    width: 1070px;
+    height: 420px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(--primary-secondary-bg-bg-500, #FEFEFE);
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.15);
+  
+  }
+  
+  .order-heading {
+    color: var(--dark);
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-top: 60px;
+  }
+  
+  .order-paragraph {
+    color: var(--dark);
+  
+    /* Body Medium Text (20) */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  
+  .order-div {
+    margin-left: 30px;
+  }
+  
+  .order-btn {
+    display: flex;
+    width: 252px;
+    height: 60px;
+    padding: 0px 45px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #FF2626;
+  }
+  
+  @media screen and (max-width: 767.98px) {
+    .ordersection-container {
+      width: 350px;
+      height: 550px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  
+    }
+  
+    .order-heading {
+      font-size: 35px;
+    }
+  
+    .order-paragraph {
+      font-size: 18px;
+    }
+  
+    .order-btn {
+      width: 180px;
+      height: 40px;
+      padding: 0px 40px;
+      display: inline;
+  
+    }
+  
+    .order-image img {
+      width: 60%;
+  
+    }
+  
+    .col-md-7-order {
+      left: 0px;
+    }
+  }
+  
+  @media screen and (max-width: 350px) {
+    .order-heading {
+      font-size: 25px;
+    }
+  }
+  
+  /* Conatct section css start */
+  .contact-heading {
+    text-align: center;
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .contact-background {
+    background: url('./assets/images/Contact\ us\ bg.svg') center no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 1030px;
+    height: 566px;
+  }
+  
+  .contact-image img {
+    width: 400px;
+    height: 300px;
+    margin-top: 100px;
+  
+  }
+  
+  #name,
+  #email {
+    width: 300px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background: #FFF;
+  }
+  
+  #message {
+    width: 350px;
+    height: 150px;
+    border-radius: 10px;
+    background: #FFF;
+  }
+  
+  .contact-btn {
+    display: flex;
+    width: 252px;
+    height: 51px;
+    padding: 0px 45px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #FF2626;
+    margin-left: 30px;
+  }
+  
+  .line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: var(--dark);
+    /* Line color */
+    margin: 0 10px;
+  }
+  
+  @media screen and (max-width: 1160px) {
+    .contact-background {
+      width: 900px;
+      height: 700px;
+    }
+  }
+  
+  @media screen and (max-width: 1047px) {
+    .contact-background {
+      width: 900px;
+      height: 500px;
+    }
+  
+    #name,
+    #email {
+      width: 200px;
+      height: 40px;
+  
+    }
+  
+    #message {
+      width: 250px;
+      height: 100px;
+  
+    }
+  
+    .contact-btn {
+      width: 200px;
+      height: 40px;
+      margin-left: 20px;
+    }
+  
+    .contact-image img {
+      width: 300px;
+      height: 300px;
+      margin-top: 60px;
+  
+    }
+  }
+  
+  @media screen and (max-width: 991px) {
+    .contact-background {
+      width: 700px;
+      height: 500px;
+    }
+  
+    .contact-btn {
+      width: 160px;
+      height: 35px;
+      margin-left: 0px;
+    }
+  
+    .social-icons i {
+      margin-left: 8px;
+    }
+  
+    .line {
+      width: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 807px) {
+    .contact-background {
+      width: 600px;
+      height: 500px;
+    }
+  
+    .contact-image img {
+      width: 250px;
+      height: 250px;
+      margin-top: 50px;
+  
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .contact-background {
+      width: 500px;
+      height: 850px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  
+    .col-md-6 form {
+      display: inline-block;
+      text-align: left;
+    }
+  
+    .form-group {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .btn.contact-btn {
+      margin-left: 8px;
+    }
+  
+    #name,
+    #email {
+      width: 280px;
+      height: 45px;
+  
+    }
+  
+    #message {
+      width: 300px;
+      height: 110px;
+  
+    }
+  
+    .contact-image img {
+      margin-right: 10px;
+      width: 300px;
+      height: 300px;
+    }
+  
+    form {
+      margin-top: 0px !important;
+    }
+  
+  }
+  
+  @media screen and (max-width:530px) {
+    .contact-background {
+      width: 400px;
+      height: 850px;
+    }
+  
+    .contact-image img {
+      margin-top: 20px !important;
+    }
+  }
+  
+  @media screen and (max-width:429px) {
+    .contact-background {
+      width: 350px;
+      height: 850px;
+  
+    }
+  
+    .contact-image img {
+      margin-left: 50px;
+    }
+  }
+  
+  @media screen and (max-width:380px) {
+    .contact-background {
+      width: 300px;
+      height: 810px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  
+    .contact-image img {
+      margin-left: 20px;
+    }
+  
+    #name,
+    #email {
+      width: 250px;
+      height: 45px;
+      margin-left: 10px;
+  
+    }
+  
+    #message {
+      width: 270px;
+      height: 110px;
+      margin-left: 10px;
+    }
+  
+    .btn.contact-btn {
+      margin-left: 10px;
+    }
+  }
+  
+  
+  
+  /* @media screen and (max-width:) {
+    
+  } */
+  
+  /* All Section css on 350 px */
+  @media screen and (max-width:350px) {
+    .work-background {
+      width: 350px;
+    }
+  
+    .about-background {
+      background-color: #f6f7f9;
+      width: 350px;
+    }
+  
+    .team-background {
+      width: 350px;
+    }
+  
+    .customer-background {
+      width: 350px;
+    }
+  
+    .footer-background {
+      width: 350px;
+    }
+  
+    .last-section {
+      width: 350px;
+    }
+  
+    /* .background-container{
+   
+  } */
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+  }
+  
+  /* Footer section css */
+  .footer-heading {
+    color: var(--dark);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+  }
+  
+  .footer-second-heading {
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    color: var(--dark);
+  }
+  
+  .footer-nav a {
+    display: block;
+    text-decoration: none;
+    color: #FF2626;
+    padding: 5px;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  
+  .footer-social-icons i:hover {
+    background-color: #FF2626;
+  }
+  
+  .footer-social-icons a {
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .footer-social-icons i {
+    color: #ffffff;
+    border-radius: 50px;
+    background: linear-gradient(to top, #FE6700 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position: 0 100%;
+    padding: 12px;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    transition: background-position 0.5s ease-in-out;
+  }
+  
+  .footer-social-icons a:hover i {
+    background-position: 0 0;
+  }
+  
+  .footer-third-heading,
+  .footer-forth-heading {
+    color: var(--dark);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+  }
+  
+  .footer-paragraph {
+    color: var(--primary-secondary-text-text-300, #5B5866);
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  
+  .footer-btn {
+    display: flex;
+    width: 252px;
+    height: 51px;
+    padding: 0px 45px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #FF2626;
+  }
+  
+  @media screen and (max-width:1147px) {
+    .footer-input-field {
+      width: 200px !important;
+      height: 50px !important;
+    }
+  
+    .footer-btn {
+      width: 200px;
+      height: 42px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 812px) {
+    .work-background {
+      width: 800px;
+    }
+  
+    .about-background {
+      width: 800px;
+    }
+  
+    .footer-background {
+      width: 800px;
+    }
+  
+    .last-section {
+      width: 800px;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .last-section{
+      height: 75px !important;
+    }
+  }
